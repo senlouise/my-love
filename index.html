@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Love 💘</title>
+  <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
+  <style>
+    body {
+        font-family: 'Itim', cursive;
+        background: url('https://static.vecteezy.com/system/resources/previews/010/839/386/non_2x/aesthetic-minimal-cute-pastel-pink-wallpaper-illustration-perfect-for-wallpaper-backdrop-postcard-background-banner-vector.jpg') no-repeat center center fixed;
+        background-size: cover;
+        text-align: center;
+        padding-top: 50px;
+        color: #444;
+    }
+    img.cat {
+      width: 150px;
+      margin-bottom: 20px;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+    input {
+      padding: 10px;
+      border-radius: 15px;
+      border: 2px solid #ffa4c4;
+      font-size: 18px;
+      background-color: #fff5f9;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 25px;
+      font-size: 16px;
+      border-radius: 20px;
+      background-color: #ff8fb1;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #ff6fa1;
+    }
+    #error {
+      margin-top: 10px;
+      color: red;
+    }
+  </style>
+</head>
+<body>
+
+  <img src="pngtree-cute-cat2.png" alt="แมวน่ารัก" class="cat" />
+  <h2>💖 กรอกวันครบรอบ 💖</h2>
+  <p>ใส่วันครบรอบ</p>
+  <input type="text" id="dateInput" placeholder="dd/mm" />
+  <br />
+  <button onclick="checkDate()">ไปต่อ ➤</button>
+  <div id="error"></div>
+
+  <script>
+    function checkDate() {
+      const input = document.getElementById("dateInput").value.trim();
+      const error = document.getElementById("error");
+
+      if (input === "18/05") {
+        window.location.href = "page2.html";
+      } else {
+        error.textContent = "วันที่ยังไม่ถูกต้อง ลองใหม่อีกครั้งนะงับ 🥺";
+      }
+    }
+  </script>
+</body>
+</html>
