@@ -48,6 +48,9 @@
   <h1>🎉 สุขสันต์วันครบรอบ 1 เดือน 🎉</h1>
 
   <div class="message">
+    
+    👉ลองแตะหน้าจอทีนึงสิ👈
+    
     ครบรอบ1เดือนแล้วน้าาาา  
     ถึงพึ่งจะได้มาอยู่ด้วยกันไม่นานก็เถอะแต่เค้าดีใจนะที่มีเธอเป็นแฟนเค้า 💕  
     อยากให้เราอยู่กันอย่างงี้เรียนรู้กันไปเรื่อยๆ  
@@ -57,11 +60,21 @@
     ถึงจะเป็นประโยคสั้นๆแต่เค้าตั้งใจบอกนะและตั้งใจบอกมากด้วยรับไวเด้วยละ
 
     เค้ามีของจะให้ด้วยนะลงมาดูเองสิเค้าเอาไปให้แล้วใต้หอ 😆
+
   </div>
 
-  <audio autoplay loop>
+  <audio id="bgMusic" loop>
     <source src="QLER- จีบ [pk4q4-U891E].mp3" type="audio/mpeg">
-    เบราว์เซอร์ของคุณไม่รองรับเสียงเพลง
+    
   </audio>
+
+  <script>
+    const music = document.getElementById('bgMusic');
+    const playOnce = () => {
+      music.play().catch(() => {});
+      document.removeEventListener('click', playOnce);
+    };
+    document.addEventListener('click', playOnce);
+  </script>
 </body>
 </html>
