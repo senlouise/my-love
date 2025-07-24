@@ -7,7 +7,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Itim&display=swap" rel="stylesheet">
   <style>
     body {
-       font-family: 'Itim', cursive;
+      font-family: 'Itim', cursive;
       background: url('https://static.vecteezy.com/system/resources/previews/010/839/386/non_2x/aesthetic-minimal-cute-pastel-pink-wallpaper-illustration-perfect-for-wallpaper-backdrop-postcard-background-banner-vector.jpg') no-repeat center center fixed;
       background-size: cover;
       color: #333;
@@ -40,16 +40,51 @@
       margin-left: auto;
       margin-right: auto;
     }
+
+    .slider {
+      overflow: hidden;
+      margin: 30px auto 0;
+      width: 100%;
+      max-width: 600px;
+      border-radius: 20px;
+    }
+    .slider-track {
+      display: flex;
+      width: max-content;
+      animation: scroll 20s linear infinite;
+    }
+    .slider-track img {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      margin-right: 10px;
+      border-radius: 15px;
+    }
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
   </style>
 </head>
 <body>
 
-  <!-- <img src="https://png.pngtree.com/png-clipart/20190118/ourmid/pngtree-cartoon-cat-cute-cat-hand-painted-cat-cat-cute-pet-png-image_449977.jpg" alt="แมวน้อย" class="cat" /> -->
   <h1>🎉 สุขสันต์วันครบรอบ 1 เดือน 🎉</h1>
 
+  <div class="slider">
+    <div class="slider-track">
+      <img src="S__2842631.jpg" alt="1">
+      <img src="S__2842633.jpg" alt="2">
+      <img src="S__2842634.jpg" alt="3">
+      <img src="S__2842635.jpg" alt="4">
+      <img src="S__2842636.jpg" alt="5">
+      <img src="S__2842637.jpg" alt="6">
+      <img src="S__2842638.jpg" alt="5">
+      <img src="S__2842639.jpg" alt="6">
+      <img src="S__2842640.jpg" alt="6">
+    </div>
+  </div>
+
   <div class="message">
-    👉ลองแตะหน้าจอทีนึงสิ👈
-    
     ครบรอบ1เดือนแล้วน้าาาา  
     ถึงพึ่งจะได้มาอยู่ด้วยกันไม่นานก็เถอะแต่เค้าดีใจนะที่มีเธอเป็นแฟนเค้า 💕  
     อยากให้เราอยู่กันอย่างงี้เรียนรู้กันไปเรื่อยๆ  
@@ -60,11 +95,11 @@
 
     เค้ามีของจะให้ด้วยนะลงมาดูเองสิเค้าเอาไปให้แล้วใต้หอ 😆
 
+    👉ลองแตะหน้าจอทีนึงสิ👈
   </div>
 
   <audio id="bgMusic" loop>
     <source src="QLER- จีบ [pk4q4-U891E].mp3" type="audio/mpeg">
-    
   </audio>
 
   <script>
